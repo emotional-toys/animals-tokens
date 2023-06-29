@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./contracts/fred_token/Cargo.toml"
+    ]
+}
