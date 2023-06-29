@@ -1,4 +1,4 @@
-use near_sdk::{Gas, ext_contract, PromiseOrValue, assert_one_yocto, PromiseResult};
+use near_sdk::{Gas, ext_contract, PromiseOrValue};
 
 use crate::*;
 
@@ -60,7 +60,7 @@ pub trait FungibleTokenCore {
 #[near_bindgen]
 impl FungibleTokenCore for Contract {
     #[payable]
-    fn ft_transfer(&mut self, receiver_id: AccountId, amount: U128, memo: Option<String>) {
+    fn ft_transfer(&mut self, _receiver_id: AccountId, _amount: U128, _memo: Option<String>) {
         /*
             FILL THIS IN
         */
@@ -69,10 +69,10 @@ impl FungibleTokenCore for Contract {
     #[payable]
     fn ft_transfer_call(
         &mut self,
-        receiver_id: AccountId,
-        amount: U128,
-        memo: Option<String>,
-        msg: String,
+        _receiver_id: AccountId,
+        _amount: U128,
+        _memo: Option<String>,
+        _msg: String,
     ) -> PromiseOrValue<U128> {
         /*
             FILL THIS IN
@@ -151,9 +151,9 @@ impl Contract {
     #[private]
     pub fn ft_resolve_transfer(
         &mut self,
-        sender_id: &AccountId,
-        receiver_id: AccountId,
-        amount: U128,
+        _sender_id: &AccountId,
+        _receiver_id: AccountId,
+        _amount: U128,
     ) -> U128 {
         /*
             FILL THIS IN

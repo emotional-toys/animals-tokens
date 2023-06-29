@@ -1,5 +1,5 @@
 use near_sdk::json_types::U128;
-use near_sdk::{env, log, AccountId, Balance, Promise};
+use near_sdk::{AccountId};
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::serde::{Deserialize, Serialize};
 
@@ -97,7 +97,7 @@ impl StorageManagement for Contract {
         todo!(); //remove once code is filled in.
     }
 
-    fn storage_balance_of(&self, account_id: AccountId) -> Option<StorageBalance> {
+    fn storage_balance_of(&self, _account_id: AccountId) -> Option<StorageBalance> {
         /*
             FILL THIS IN
         */
