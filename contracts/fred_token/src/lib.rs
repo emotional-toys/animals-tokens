@@ -154,7 +154,7 @@ impl Fred {
         //Verify call is coming from aeon
         require!(
             env::predecessor_account_id() == self.aeon_contract_id,
-            "Only aeon contract can help you claim gift, mint profile on aeon to do this"
+            "Only aeon contract can help you claim gift, mint profile on ratio.club to do this"
         );
         let additional_storage_fee =
             self.get_additional_storage_for_aeon_profile_creation(account_id.clone());
