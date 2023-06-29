@@ -7,4 +7,4 @@ Some of the code here was created by following the NEAR Protocol tutorial.
 
 As the code in NEAR is starting to age, looking at furthur examples is a good idea. Understanding the chains is also recommended.
 
-EVBxeL0KcYcpIYnX2WWs
+
