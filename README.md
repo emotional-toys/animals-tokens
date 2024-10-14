@@ -15,3 +15,10 @@ Make a demo that will publish a NFT based on my emotional diagram.
 * Some of the code here was created by following the NEAR Protocol tutorial.
 * As the code in NEAR is starting to age, looking at furthur examples is a good idea. Understanding the chains is also recommended.
 * Link to Discord and an aeon.
+
+### This is object #4 in the series
+
+* Flash three lights
+* Virbrate two motors
+* Some chirps
+* Emotional coinage via emotional diagrams
