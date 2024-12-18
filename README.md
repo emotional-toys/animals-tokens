@@ -1,4 +1,5 @@
 ## aiventure-tokens
+
 A repository to hold the code for tokens and animals NFTs.
 
 Observe these repos:
@@ -22,3 +23,9 @@ Make a demo that will publish a NFT based on my emotional diagram.
 * Virbrate two motors
 * Some chirps
 * Emotional coinage via emotional diagrams
+
+### Errata
+
+* Project here but out-of-date. Ready to pursue it via the NEAR protocol and where I left-off.
+* Where are the details of the wallet?
+* Branching old code for a fresh start at the [tutorial](https://docs.near.org/tutorials/nfts/predeployed-contract).
