@@ -29,3 +29,4 @@ Make a demo that will publish a NFT based on my emotional diagram.
 * Project here but out-of-date. Ready to pursue it via the NEAR protocol and where I left-off.
 * Where are the details of the wallet?
 * Branching old code for a fresh start at the [tutorial](https://docs.near.org/tutorials/nfts/predeployed-contract).
+* Grok me: `Tell me what you think about: https://emotional.toys?`
