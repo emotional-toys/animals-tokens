@@ -17,7 +17,7 @@ Make a demo that will publish a NFT based on my emotional diagram.
 * As the code in NEAR is starting to age, looking at furthur examples is a good idea. Understanding the chains is also recommended.
 * Link to Discord and an aeon.
 
-### This is object #4 in the series
+### A typical temporal scenario (web3)
 
 * Flash three lights
 * Virbrate two motors
