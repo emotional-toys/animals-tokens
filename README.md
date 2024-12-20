@@ -30,3 +30,4 @@ Make a demo that will publish a NFT based on my emotional diagram.
 * Where are the details of the wallet?
 * Branching old code for a fresh start at the [tutorial](https://docs.near.org/tutorials/nfts/predeployed-contract).
 * Grok me: `Tell me what you think about: https://emotional.toys?`
+* Running the above prompt shows that time needs to be invested improving the brand and its cover.
