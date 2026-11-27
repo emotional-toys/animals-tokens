@@ -4,6 +4,10 @@ The live toy runs on GA144 Volatco hardware using arrayForth/polyForth. This dir
 
 The local development path is documented in [TOOLCHAIN.md](TOOLCHAIN.md). Simulation is required before a candidate is loaded onto hardware.
 
+The first simulator-backed artifact is [first-signal.aforth](first-signal.aforth). Its current event-only boundary and the information needed to bind it to hardware are documented in [FIRST-SIGNAL.md](FIRST-SIGNAL.md).
+
+[DOT-INTEGRATION.md](DOT-INTEGRATION.md) maps that firmware vocabulary onto DOT's sensory face, Entity Nucleus, quiet-mode, and external-ring model.
+
 ## Device event envelope
 
 Produce one local manifest per candidate interaction. Keep it private when it contains person-linked data.

@@ -7,7 +7,8 @@ Produce the first Emotional Toys collectible from a real GA144 interaction, with
 ## 1. Establish the firmware baseline
 
 - [ ] Create `firmware/ga144/first-signal.aforth`.
-- [ ] Implement one deterministic interaction: a named light pattern, motor pattern, and chirp sequence.
+- [ ] Implement one deterministic interaction: a named light pattern, optional external-ring haptic request, and chirp sequence.
+- [ ] Bind the interaction vocabulary to [DOT's embodied contract](firmware/ga144/DOT-INTEGRATION.md): visual acknowledgement, optional external-ring haptic request, and quiet-mode-aware chirp.
 - [ ] Add a short header recording source dialect, intended node/pin map, and bootstream type.
 - [ ] Keep hardware-specific pin assignments explicit; do not guess them from examples.
 
@@ -16,6 +17,7 @@ Produce the first Emotional Toys collectible from a real GA144 interaction, with
 - [ ] Run the program with `ga144-aforth-cli` from its own checkout: `./ga --run /absolute/path/to/first-signal.aforth`.
 - [ ] Inspect the compilation output and confirm the intended node allocation.
 - [ ] Capture the firmware revision and simulator result in a private device manifest.
+- [ ] Add focused simulation cases for DOT acknowledgement, quiet mode, blocked-light sensor, and fault fallback.
 - [ ] Do not use `examples/hmm-sim.aforth` as the baseline: it currently fails on `org`.
 
 ## 3. Load and observe the Volatco board

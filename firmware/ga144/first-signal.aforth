@@ -1,0 +1,34 @@
+( Emotional Toys: First Signal )
+(
+  Simulation-safe baseline for the first collectible interaction.
+
+  Node 708 emits three 18-bit serial event words. The words are deliberately
+  stable identifiers, not raw sensor readings and not a board pin assignment.
+  They mirror DOT's embodied interaction vocabulary: light and chirp are base
+  channels; haptic is reserved for a separately reviewed external ring.
+  Bind implementations only after the selected Entity Nucleus wiring and
+  target-node map have been reviewed.
+
+  Run from the ga144-aforth-cli checkout:
+    ./ga --run /absolute/path/to/firmware/ga144/first-signal.aforth
+)
+
+node 708
+include 708serial.aforth
+
+: signal-light 0x1e101 ;  ( DOT visual acknowledgement begins )
+: signal-haptic 0x1e102 ; ( reserved external-ring haptic request )
+: signal-chirp 0x1e103 ;  ( DOT audible acknowledgement begins )
+
+: emit-event ( event-id -- )
+  out18 drop ;
+
+: first-signal
+  signal-light emit-event
+  signal-haptic emit-event
+  signal-chirp emit-event ;
+
+: main
+  io b!
+  first-signal
+  exit

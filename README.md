@@ -21,6 +21,7 @@ Read [the architecture](docs/architecture.md) before adding an item, then follow
 | `metadata/schema/` | Validation schema for item metadata. |
 | `metadata/items/` | Reviewed, publishable metadata records. |
 | `metadata/examples/` | A non-production example. |
+| `token/` | Candidate media and its human-reviewed minting package. |
 | `docs/` | Architecture, provenance, and publishing process. |
 | `legacy/near-prototype/` | Superseded NEAR/Rust tutorial work; not a deployable contract. |
 
