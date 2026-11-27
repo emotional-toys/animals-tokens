@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Emotional Toy metadata",
+  "type": "object",
+  "required": ["name", "description", "image", "external_url", "attributes", "provenance"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "image": { "type": "string", "format": "uri" },
+    "animation_url": { "type": "string", "format": "uri" },
+    "external_url": { "type": "string", "format": "uri" },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trait_type", "value"],
+        "properties": {
+          "trait_type": { "type": "string", "minLength": 1 },
+          "value": { "type": ["string", "number", "boolean"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["event_id", "device", "derived_media_sha256"],
+      "properties": {
+        "event_id": { "type": "string", "pattern": "^et-[A-Za-z0-9-]+$" },
+        "device": { "const": "GA144" },
+        "derived_media_sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+        "mint": {
+          "type": "object",
+          "properties": {
+            "chain": { "type": "string" },
+            "contract_address": { "type": "string", "pattern": "^0x[a-fA-F0-9]{40}$" },
+            "token_id": { "type": ["string", "integer"] },
+            "opensea_url": { "type": "string", "format": "uri" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

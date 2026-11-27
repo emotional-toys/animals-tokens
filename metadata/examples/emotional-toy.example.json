@@ -1,0 +1,16 @@
+{
+  "name": "Emotional Toy — First Signal",
+  "description": "A curated visual derivative of a GA144 physical interaction. No raw audio or personal sensor data is included.",
+  "image": "https://example.invalid/emotional-toys/first-signal.png",
+  "external_url": "https://emotional.toys",
+  "attributes": [
+    { "trait_type": "Device", "value": "GA144" },
+    { "trait_type": "Output", "value": "light / motor / chirp" },
+    { "trait_type": "Edition", "value": "1 of 1" }
+  ],
+  "provenance": {
+    "event_id": "et-20261127-001",
+    "device": "GA144",
+    "derived_media_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}
