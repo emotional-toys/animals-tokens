@@ -4,43 +4,45 @@
 
 Produce the first Emotional Toys collectible from a real GA144 interaction, with a simulator-tested firmware artifact and a reviewed OpenSea item record.
 
-## 1. Establish the firmware baseline
+## Next task: Owl — attentive observation
 
-- [ ] Create `firmware/ga144/first-signal.aforth`.
-- [ ] Implement one deterministic interaction: a named light pattern, optional external-ring haptic request, and chirp sequence.
-- [ ] Bind the interaction vocabulary to [DOT's embodied contract](firmware/ga144/DOT-INTEGRATION.md): visual acknowledgement, optional external-ring haptic request, and quiet-mode-aware chirp.
-- [ ] Add a short header recording source dialect, intended node/pin map, and bootstream type.
-- [ ] Keep hardware-specific pin assignments explicit; do not guess them from examples.
+Implement the first mint-eligible DOT lifetime pathway: a quiet, ready state that establishes a stable ambient-light baseline without a sensor fault. Its candidate collectible is [Forest Creature Token — Owl](token/forest-creature-token-owl.MINTING.md).
 
-## 2. Simulate before hardware
+- [ ] Add a focused `.aforth` simulation program for the attentive-observation pathway.
+- [ ] Model a valid calibration, an LED-off sample window, and a blocked/saturated-sensor fallback; do not use raw readings as collectible data.
+- [ ] Confirm quiet mode suppresses the chirp while retaining an accessible visual state.
+- [ ] Run the focused simulation from `ga144-aforth-cli`, capture the source revision and result in a private device manifest, and review the node allocation.
+- [ ] Define the selected Entity Nucleus/Volatco or GA144 prototype pin map, driver circuits, power limits, and bootstream topology before any board load.
+- [ ] Produce a consent-safe owl derivative only after a qualifying, reviewed event; add final chain, contract, token, and OpenSea references in `metadata/items/` after minting.
 
-- [ ] Run the program with `ga144-aforth-cli` from its own checkout: `./ga --run /absolute/path/to/first-signal.aforth`.
-- [ ] Inspect the compilation output and confirm the intended node allocation.
-- [ ] Capture the firmware revision and simulator result in a private device manifest.
-- [ ] Add focused simulation cases for DOT acknowledgement, quiet mode, blocked-light sensor, and fault fallback.
-- [ ] Do not use `examples/hmm-sim.aforth` as the baseline: it currently fails on `org`.
+## Follow-on pathways
 
-## 3. Load and observe the Volatco board
+- [ ] Fox — acknowledged connection.
+- [ ] Squirrel — focused work.
+- [ ] Rabbit — considered attention.
+- [ ] Hedgehog — chosen boundary / quiet mode or human-reviewed safe fallback.
+
+## Hardware validation
 
 - [ ] Generate and review the bootstream.
 - [ ] Confirm the actual board serial device and bootstream topology.
 - [ ] Preserve a known-good recovery bootstream before loading the new program.
 - [ ] Load one board only, then record the observed lights, motors, chirps, and any serial output.
 
-## 4. Prepare the first collectible
+## Prepare a collectible
 
 - [ ] Create a consent-safe visual, audio, or video derivative; keep raw inputs private.
 - [ ] Copy `metadata/examples/emotional-toy.example.json` to `metadata/items/` and complete it.
 - [ ] Compute and record the SHA-256 of the final public media.
 - [ ] Review title, description, traits, rights, and provenance before upload.
 
-## 5. Publish and record
+## Publish and record
 
 - [ ] Mint through the Emotional Toys OpenSea collection using the owner wallet.
 - [ ] Add the chain, contract address, token ID, and OpenSea URL to the metadata record.
 - [ ] Check the public item page while signed out.
 - [ ] Commit the reviewed public metadata; never commit wallet credentials, private keys, raw personal data, or source recordings.
 
-## Exit criteria for the first signal
+## Exit criteria for Owl
 
-The first item is complete when the firmware has a focused passing simulator run, the physical sequence has been observed on the intended board, the public artifact is consent-safe, and the minted item's metadata records verifiable provenance.
+The Owl item is complete when the attentive-observation pathway has a focused passing simulator run, the physical sequence has been observed on the intended board, the public artifact is consent-safe, and the minted item's metadata records verifiable provenance.
