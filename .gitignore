@@ -5,6 +5,4 @@
 *.seed
 .env
 .env.*
-private/
-media/source/
-media/rendered/
+.vscode
